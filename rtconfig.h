@@ -22,9 +22,6 @@
 
 #define RT_USING_SEMAPHORE
 #define RT_USING_MUTEX
-#define RT_USING_EVENT
-#define RT_USING_MAILBOX
-#define RT_USING_MESSAGEQUEUE
 
 /* Memory Management */
 
@@ -105,7 +102,6 @@
 #define RT_USING_AT
 #define AT_USING_CLIENT
 #define AT_CLIENT_NUM_MAX 1
-#define AT_USING_CLI
 #define AT_CMD_MAX_LEN 128
 #define AT_SW_VERSION_NUM 0x10300
 
@@ -142,20 +138,11 @@
 
 /* tools packages */
 
-#define PKG_USING_EASYFLASH
-#define PKG_EASYFLASH_ENV
-#define PKG_EASYFLASH_ERASE_GRAN 4096
-#define PKG_EASYFLASH_WRITE_GRAN_32BITS
-#define PKG_EASYFLASH_WRITE_GRAN 32
-#define PKG_EASYFLASH_START_ADDR 0
-#define PKG_USING_EASYFLASH_V410
-#define PKG_EASYFLASH_VER_NUM 0x40100
 
 /* system packages */
 
 #define PKG_USING_FAL
-#define FAL_DEBUG_CONFIG
-#define FAL_DEBUG 1
+#define FAL_DEBUG 0
 #define FAL_PART_HAS_TABLE_CFG
 #define PKG_USING_FAL_V00500
 #define PKG_FAL_VER_NUM 0x00500

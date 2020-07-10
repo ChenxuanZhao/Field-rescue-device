@@ -30,8 +30,8 @@ extern const struct fal_flash_dev stm32_onchip_flash;
 /* partition table */
 #define FAL_PART_TABLE                                                                      \
 {                                                                                           \
-    {FAL_PART_MAGIC_WROD,        "app",   "onchip_flash",       0,         60 * 1024, 0},   \
-    {FAL_PART_MAGIC_WROD,        "param", "onchip_flash",       60 * 1024 , 3 * 1024, 0},   \
+    {FAL_PART_MAGIC_WROD,        "app",   "onchip_flash",       0,         63 * 1024, 0},   \
+    {FAL_PART_MAGIC_WROD,        "param", "onchip_flash",       63 * 1024 , 1 * 1024, 0},   \
 }
 #endif /* FAL_PART_HAS_TABLE_CFG */
 #endif /* _FAL_CFG_H_ */

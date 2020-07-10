@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F103xB, USE_HAL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.;rt-thread\include;applications;board;board\CubeMX_Config\Inc;board\port;libraries\HAL_Drivers;libraries\HAL_Drivers\config;libraries\HAL_Drivers\drv_flash;packages\EasyFlash-v4.1.0\inc;packages\fal-v0.5.0\inc;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m3;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\common;rt-thread\components\net\at\include;libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Include;libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc;libraries\STM32F1xx_HAL\CMSIS\Include</IncludePath>
+              <IncludePath>.;rt-thread\include;applications;board;board\CubeMX_Config\Inc;board\port;libraries\HAL_Drivers;libraries\HAL_Drivers\config;libraries\HAL_Drivers\drv_flash;packages\fal-v0.5.0\inc;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m3;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\common;rt-thread\components\net\at\include;libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Include;libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc;libraries\STM32F1xx_HAL\CMSIS\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -459,9 +459,14 @@
           <GroupName>Applications</GroupName>
           <Files>
             <File>
-              <FileName>ef_fal_port.c</FileName>
+              <FileName>f21_core.c</FileName>
               <FileType>1</FileType>
-              <FilePath>applications\ef_fal_port.c</FilePath>
+              <FilePath>applications\f21_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>f21_message.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\f21_message.c</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>
@@ -507,51 +512,6 @@
               <FileName>drv_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>libraries\HAL_Drivers\drv_common.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>EasyFlash</GroupName>
-          <Files>
-            <File>
-              <FileName>easyflash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\EasyFlash-v4.1.0\src\easyflash.c</FilePath>
-            </File>
-            <File>
-              <FileName>ef_cmd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\EasyFlash-v4.1.0\src\ef_cmd.c</FilePath>
-            </File>
-            <File>
-              <FileName>ef_env.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\EasyFlash-v4.1.0\src\ef_env.c</FilePath>
-            </File>
-            <File>
-              <FileName>ef_env_legacy.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\EasyFlash-v4.1.0\src\ef_env_legacy.c</FilePath>
-            </File>
-            <File>
-              <FileName>ef_env_legacy_wl.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\EasyFlash-v4.1.0\src\ef_env_legacy_wl.c</FilePath>
-            </File>
-            <File>
-              <FileName>ef_iap.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\EasyFlash-v4.1.0\src\ef_iap.c</FilePath>
-            </File>
-            <File>
-              <FileName>ef_log.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\EasyFlash-v4.1.0\src\ef_log.c</FilePath>
-            </File>
-            <File>
-              <FileName>ef_utils.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\EasyFlash-v4.1.0\src\ef_utils.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -766,11 +726,6 @@
               <FileName>at_utils.c</FileName>
               <FileType>1</FileType>
               <FilePath>rt-thread\components\net\at\src\at_utils.c</FilePath>
-            </File>
-            <File>
-              <FileName>at_cli.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>rt-thread\components\net\at\src\at_cli.c</FilePath>
             </File>
             <File>
               <FileName>at_client.c</FileName>

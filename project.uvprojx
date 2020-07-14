@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F103xB, USE_HAL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.;rt-thread\include;applications;board;board\CubeMX_Config\Inc;board\port;libraries\HAL_Drivers;libraries\HAL_Drivers\config;libraries\HAL_Drivers\drv_flash;packages\fal-v0.5.0\inc;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m3;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\common;rt-thread\components\net\at\include;libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Include;libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc;libraries\STM32F1xx_HAL\CMSIS\Include</IncludePath>
+              <IncludePath>.;rt-thread\include;applications;board;board\CubeMX_Config\Inc;board\port;libraries\HAL_Drivers;libraries\HAL_Drivers\config;libraries\HAL_Drivers\drv_flash;packages\fal-v0.5.0\inc;packages\FlexibleButton-v1.0.0;rt-thread\libcpu\arm\common;rt-thread\libcpu\arm\cortex-m3;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\common;rt-thread\components\net\at\include;libraries\STM32F1xx_HAL\CMSIS\Device\ST\STM32F1xx\Include;libraries\STM32F1xx_HAL\STM32F1xx_HAL_Driver\Inc;libraries\STM32F1xx_HAL\CMSIS\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -459,14 +459,24 @@
           <GroupName>Applications</GroupName>
           <Files>
             <File>
-              <FileName>f21_core.c</FileName>
+              <FileName>alarm.c</FileName>
               <FileType>1</FileType>
-              <FilePath>applications\f21_core.c</FilePath>
+              <FilePath>applications\alarm.c</FilePath>
             </File>
             <File>
-              <FileName>f21_message.c</FileName>
+              <FileName>f21.c</FileName>
               <FileType>1</FileType>
-              <FilePath>applications\f21_message.c</FilePath>
+              <FilePath>applications\f21.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\key.c</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>
@@ -606,6 +616,16 @@
               <FileName>fal_rtt.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\fal-v0.5.0\src\fal_rtt.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>flex_button</GroupName>
+          <Files>
+            <File>
+              <FileName>flexible_button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\FlexibleButton-v1.0.0\flexible_button.c</FilePath>
             </File>
           </Files>
         </Group>

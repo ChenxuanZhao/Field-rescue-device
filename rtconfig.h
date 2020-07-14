@@ -102,6 +102,7 @@
 #define RT_USING_AT
 #define AT_USING_CLIENT
 #define AT_CLIENT_NUM_MAX 1
+#define AT_PRINT_RAW_CMD
 #define AT_CMD_MAX_LEN 128
 #define AT_SW_VERSION_NUM 0x10300
 
@@ -152,6 +153,8 @@
 
 /* miscellaneous packages */
 
+#define PKG_USING_FLEXIBLE_BUTTON
+#define PKG_USING_FLEXIBLE_BUTTON_V100
 
 /* samples: kernel and components samples */
 
